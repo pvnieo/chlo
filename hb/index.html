@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 30th Birthday Chloé!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="animate-pop">Happy 30th Birthday<br><span class="highlight-name">Chloé!</span></h1>
+            <p class="subtitle">Thirty years of being wonderful you.</p>
+            <button id="start-btn" class="cta-btn">Let's Celebrate! ↓</button>
+        </div>
+        <canvas id="confetti-canvas"></canvas>
+    </header>
+
+    <!-- 30 Reasons Section -->
+    <section id="reasons" class="section">
+        <h2 class="section-title">30 Reasons I Love You</h2>
+        <div class="reasons-grid" id="reasons-grid">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section alt-bg">
+        <h2 class="section-title">Memories Gallery</h2>
+        <div class="gallery-container" id="gallery-container">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game" class="section">
+        <h2 class="section-title">Catch the Cake!</h2>
+        <p class="instruction">Catch 30 cakes to unlock your gift!</p>
+        <div class="game-area" id="game-area">
+            <div class="score-board">Score: <span id="score">0</span>/30</div>
+            <button id="start-game-btn" class="game-btn">Start Game</button>
+            <div id="game-canvas-container"></div>
+        </div>
+    </section>
+
+    <!-- Gift Reveal Section (Hidden initially) -->
+    <section id="gift" class="section gift-section hidden-section">
+        <h2 class="section-title">A Special Gift</h2>
+        <div class="gift-box-container" id="gift-box-container">
+            <div id="gift-box" class="gift-box">
+                🎁
+                <p class="click-hint">Click me!</p>
+            </div>
+            <div id="gift-content" class="gift-content hidden">
+                <h3>My Gift to You</h3>
+                
+                <!-- Arabic Text -->
+                <div class="arabic-love">
+                    كنبغيك بزاف ❤️
+                </div>
+
+                <p id="gift-message">Message goes here...</p>
+                
+                <!-- Placeholder for photo of us -->
+                <div class="gift-reveal-content">
+                    <p class="img-caption">Us ❤️</p>
+                    <img src="assets/us.png" alt="Us" class="photo-of-us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by So High B for Chloé</p>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
